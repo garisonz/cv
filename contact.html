@@ -19,12 +19,15 @@
     <div class="one-col">
         <form action="mailto:garisonzag88@gmail.com" method="POST">
             <label for="name">Name</label>
-            <input type="text" name="name">
-            <label for="email">email</label>
-            <input type="email" name="email" id="">
-            <label for="message">message</label>
-            <textarea name="message" id=""></textarea>
-            <input type="submit" class="submit">
+            <input type="text" name="name" id="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+            
+            <input type="submit" class="submit" value="Submit">
         </form>
     </div>
     
