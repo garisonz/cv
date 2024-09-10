@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif; /* Example Google font */
+    background-color: #000000;
 }
 
 /* Style the nav section */
@@ -13,6 +14,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* Style the footer */
 footer {
@@ -26,7 +28,7 @@ footer {
 
 /* Splash page section */
 .splash {
-    background-color: #ececec;
+    background-color: #555555;
     padding: 50px;
     text-align: center;
 }
@@ -35,7 +37,7 @@ footer {
 .splash h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 /* Style headshot image */
@@ -49,22 +51,57 @@ footer {
 /* Style address paragraph */
 .splash p:first-of-type {
     font-style: italic;
-    color: #555;
+    color: white;
 }
 
 /* Style tag line paragraph */
 .splash p:last-of-type {
     font-weight: bold;
     font-size: 18px;
-    color: #666;
+    color: white;
 }
 
 /* Horizontal rule styles */
 hr {
-    border: 1px solid #9ca0a0;
-    margin: 20px 0;
+    border: 2px solid #ffffff;
+    margin: 50px 0;
 }
 
+.edu {
+    background-color: #333333;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px; /* Adjust the value to change the roundness */
+    padding: 20px;
+    margin: 20px;
+}
+
+.awards {
+    background-color: #333333;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px; /* Adjust the value to change the roundness */
+    padding: 20px;
+    margin: 20px;
+}
+
+.skills {
+    background-color: #333333;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px; /* Adjust the value to change the roundness */
+    padding: 20px;
+    margin: 20px;
+}
+
+.experience {
+    background-color: #333333;
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px; /* Adjust the value to change the roundness */
+    padding: 20px;
+    margin: 20px;
+}
 
 /* Style section headings */
 h2 {
@@ -72,6 +109,7 @@ h2 {
     color: #000000;
     text-transform: uppercase;
     margin-bottom: 10px;
+    color: white;
 }
 
 section {
@@ -103,12 +141,12 @@ dl {
 
 /* Link styles */
 a {
-    color: #007bff;
+    color: #cececd;
     text-decoration: none;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #000000;
     text-decoration: underline;
 }
 
@@ -117,7 +155,7 @@ p, li {
 }
 
 .projects {
-    background-color: #ececec;
+    background-color: #333333;
 }
 
 h2 {
@@ -137,7 +175,7 @@ h2 {
 
 .card {
     background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(14, 14, 14, 0.1);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -155,6 +193,7 @@ h2 {
     align-items: center;
     max-width: 600px;
     margin: auto;
+    color: white;
 }
 
 input, textarea {
@@ -163,5 +202,15 @@ input, textarea {
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    color: white;
+}
+
+.info {
+    color: white;
+}
+
+.submit {
+    color: black;
+    background-color: #716e6e;
 }
 
