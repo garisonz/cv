@@ -1,0 +1,167 @@
+/* Remove default page margins */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Example Google font */
+}
+
+/* Style the nav section */
+nav {
+    background-color: #a7a7a7;
+    color: #fff;
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the footer */
+footer {
+    background-color: #a7a7a7;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Splash page section */
+.splash {
+    background-color: #ececec;
+    padding: 50px;
+    text-align: center;
+}
+
+/* h1 styles */
+.splash h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Style headshot image */
+.splash img {
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style address paragraph */
+.splash p:first-of-type {
+    font-style: italic;
+    color: #555;
+}
+
+/* Style tag line paragraph */
+.splash p:last-of-type {
+    font-weight: bold;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Horizontal rule styles */
+hr {
+    border: 1px solid #9ca0a0;
+    margin: 20px 0;
+}
+
+
+/* Style section headings */
+h2 {
+    font-family: 'Roboto', sans-serif; /* Example Google font */
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 5px 40px 10px 40px;
+}
+
+/* Style education paragraph */
+.edu p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Style unordered lists */
+ul {
+    list-style-type: square;
+    margin-left: 10px;
+}
+
+.skills li {
+    padding-bottom: 15px;
+}
+
+/* Style description lists to use grid layout */
+dl {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 40px;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+p, li {
+    font-size: 1.0em;
+}
+
+.projects {
+    background-color: #ececec;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.card li {
+    text-align: left;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.one-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
