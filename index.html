@@ -1,144 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Garison Zagorski – Home</title>
-    <meta name="description" content="Resume of Your Name, a software engineer skilled in web development, programming, and problem-solving." />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garison — Software Engineer & Data Scientist</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="resume.html">Resume</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="icons">
-                <a href="https://github.com/garisonz/">
-                    <img src="images/github-mark-white.png" alt="GitHub" class="github-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/garison-zagorski/">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn" class="linkedin-icon">
-                </a>
-            </div>
-        </div>
 
-    </header>
-    <div class="seperator-hr">
-        <hr>
-    </div>
-    <div class="main-container">
+<canvas id="three-canvas"></canvas>
 
-        <div class="left-section">
-            
-            <div class="code-icon">
-                <img width="50" height="50" src="https://img.icons8.com/sf-black/64/FFFFFF/source-code.png" alt="source-code"/>
-            </div>
-            
-            <h1>Garison Zagorski</h1>
-            <p class="subtitle">Software Engineer | Data Engineer</p>
-            
-            <div class="description">
-                <div class="container">
-                    <div class="intro-text">As a Software Engineer, I’m best described as:</div>
-                    <div class="typewriter-container">
-                        <span class="typewriter-text" id="typewriter"></span>
-                    </div>
-                </div>
+<div class="content">
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">Garison Z.</div>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-                <p>I am driven and passionate about turning ideas into impactful, real-world solutions. I strive to build technology that not only solves problems but inspires progress.</p>
-                <p>My goal is to one day make a meaningful impact on the world through the power of innovation.</p>
-            </div>
-            
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-label">Software Engineer & Data Scientist</div>
+        <h1>Garison Zagorski<br><em>Builds</em> things<br>with data & code</h1>
+        <p class="hero-sub">Bridging full-stack engineering with machine learning — turning complex data into elegant, actionable software.</p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="hero-cta">
+            View my work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#" class="hero-cta hero-cta--outline">
+            Blog
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
-        
-        <div class="right-section">
-            <div class="profile-image">
-                <img src="images/face_shot.jpg" alt="" class="self-image">
-            </div>
-            
+      </div>
+      <div class="hero-image-wrap">
+        <canvas id="hero-face-canvas" class="hero-face"></canvas>
+      </div>
+      <div class="scroll-hint">
+        <div class="line"></div>
+        Scroll
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚡</div>
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">HTML/CSS</span>
         </div>
-    </div>
-    <div class="seperator-hr">
-        <hr>
-    </div>
-    <div class="skills-section">
-        <h2>Skills</h2>
-        <div class="category">
-            <div class="category-title">
-                <i class="fa-solid fa-toolbox" style="color: #787878;"></i>
-                Languages / Databases
-            </div>
-            <div class="skills-list">
-                <div class="skill-tag">
-                    <img src="images/python-logo.png" alt="">
-                    Python
-                </div>
-                <div class="skill-tag">
-                    <img src="images/java-logo.png" alt="">
-                    Java
-                </div>
-                <div class="skill-tag">
-                    <img src="images/js-logo.png" alt="">
-                    JavaScript
-                </div>
-                <div class="skill-tag">
-                    <img src="images/c++.png" alt="">
-                    C++
-                </div>
-                <div class="skill-tag">
-                    <img src="images/sql-logo.png" alt="">
-                    SQL
-                </div>
-            </div>
-            <div class="category-title">
-                <i class="fa-solid fa-toolbox" style="color: #787878;"></i>
-                Frameworks / Libraries
-            </div>
-            <div class="skills-list">
-                <div class="skill-tag">
-                    <img src="images/dj-logo.png" alt="">
-                    Django
-                </div>
-                <div class="skill-tag">
-                    <img src="images/react-logo.png" alt="">
-                    React
-                </div>
-                <div class="skill-tag">
-                    <img src="images/tw.png" alt="">
-                    Tailwind CSS
-                </div>
-            </div>
-            <div class="category-title">
-                <i class="fa-solid fa-toolbox" style="color: #787878;"></i>
-                Tools / Platforms
-            </div>
-            <div class="skills-list">
-                <div class="skill-tag">
-                    <img src="images/git-logo.png" alt="">
-                    Git
-                </div>
-                <div class="skill-tag">
-                    <img src="images/gh-logo.png" alt="">
-                    GitHub
-                </div>
-                <div class="skill-tag">
-                    <img src="images/docker-logo.png" alt="">
-                    Docker
-                </div>
-                <div class="skill-tag">
-                    <img src="images/postman-logo.png" alt="">
-                    Postman
-                </div>
-            </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🧠</div>
+        <h3>Machine Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">Keras</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">NumPy</span>
         </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🏗️</div>
+        <h3>Web / Full-Stack</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">☁️</div>
+        <h3>Infrastructure</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Supabase</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Vercel</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+      </div>
     </div>
-    <script src="js/typing.js"></script>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-list">
+
+      <div class="project-card reveal">
+        <div class="project-meta">
+          <span class="project-type">Machine Learning</span>
+          <h3>ECG Signal Classifier</h3>
+          <div class="project-stack">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>NumPy</span>
+          </div>
+          <a href="#" class="project-gh" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="project-desc">
+          Binary classification neural network for detecting anomalies in electrocardiogram data using the ECG5000 dataset.
+          <ul>
+            <li>Data preprocessing and normalization pipeline</li>
+            <li>Model architecture with ReLU/sigmoid activations and dropout regularization</li>
+            <li>Overfitting/underfitting diagnosis and hyperparameter tuning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-meta">
+          <span class="project-type">Data Science Portfolio</span>
+          <h3>ML Applications Repo</h3>
+          <div class="project-stack">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>Jupyter</span>
+          </div>
+          <a href="https://github.com/garisonz/ml-application" class="project-gh" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="project-desc">
+          A structured collection of machine learning projects covering a range of techniques and domains.
+          <ul>
+            <li>Organized subfolders for tools (NumPy, Pandas, linear algebra) and applied projects</li>
+            <li>Fraud detection analysis (account takeover, synthetic identity)</li>
+            <li>Continuous expansion with finance and classification projects</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Experience & Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2026 — Present</div>
+        <h3>Freelance Software Engineer</h3>
+        <h4>Self-Employed</h4>
+        <p>Building full-stack web applications for clients. Designed and developed a Design Request Portal for a professional design team — featuring a public intake form with drag-and-drop file uploads, an admin dashboard with filtering and status management, role-based auth, and email notifications via Resend.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2025 — Present</div>
+        <h3>Professional Data Science & Analytics Program</h3>
+        <h4>MIT</h4>
+        <p>Intensive program covering machine learning, statistical modeling, data engineering, and applied analytics. Building production-grade models and a portfolio of real-world projects.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024</div>
+        <h3>B.S. Computer Science</h3>
+        <h4>University of Georgia</h4>
+        <p>Core coursework in algorithms, data structures, databases, and software engineering. Capstone projects in full-stack development and data analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="reveal">
+      <h2>Let's build<br>something <em>together</em></h2>
+      <p style="color:var(--text-dim); font-weight:300; max-width:400px; margin:0 auto;">
+        Open to software engineering and data science roles. Always interested in challenging problems.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:garisonzag88@gmail.com" class="contact-link">Email</a>
+        <a href="https://github.com/garisonz" class="contact-link" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/garison-zagorski/" class="contact-link" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Garison Zagorski</span>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
